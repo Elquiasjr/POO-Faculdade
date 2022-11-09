@@ -13,7 +13,7 @@ public class Aluno {
 		this.notas = notas;
 	}
 	
-	public void CalcularMedia() {
+	public void calcularMedia() {
 		double somaNotas = 0;
 		for(int i = 0; i < 4; i++) {
 			somaNotas += this.notas[i];
@@ -21,7 +21,7 @@ public class Aluno {
 		System.out.println("A média do alunos " + nomeAluno + " é: " + somaNotas/4 + "\n" );
 	}
 	
-	public double CalcularMediaRetorno() {
+	public double calcularMediaRetorno() {
 		double somaNotas = 0;
 		for(int i = 0; i < 4; i++) {
 			somaNotas += this.notas[i];

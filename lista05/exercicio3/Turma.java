@@ -28,21 +28,21 @@ public class Turma {
 		this.alunos = new ArrayList<Aluno>();
 	}
 	
-	public void AdicionarAluno(int ra, String nomeAluno, double nota1, double nota2, double nota3, double nota4) {
+	public void adicionarAluno(int ra, String nomeAluno, double nota1, double nota2, double nota3, double nota4) {
 		Aluno aluno = new Aluno(ra, nomeAluno, new double[]{nota1, nota2, nota3, nota4});
 		alunos.add(aluno);
 	}
 	
-	public void CalcularMediaAluno() {
+	public void calcularMediaAluno() {
 		for(Aluno aluno: alunos) {
-			aluno.CalcularMedia();
+			aluno.calcularMedia();
 		}
 	}
 	
-	public void CalcularMediaTurma() {
+	public void calcularMediaTurma() {
 		double somaMedias = 0;
 		for(Aluno aluno: alunos) {
-			somaMedias += aluno.CalcularMediaRetorno();
+			somaMedias += aluno.calcularMediaRetorno();
 		}
 		System.out.println("O valor da Media da turma é: " + somaMedias/alunos.size() + "\n");
 	}
